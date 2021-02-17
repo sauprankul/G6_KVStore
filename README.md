@@ -6,6 +6,8 @@ Rami Dahman: rami@cs.wisc.edu
 # Run the server:
 `java -jar KVServer.jar none`
 
+Target: "localhost:50051"
+
 There are 3 cache modes: 
 "none" uses raw sqlite. 
 "lru <N>" uses strict LRU
