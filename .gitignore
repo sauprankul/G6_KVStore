@@ -1,0 +1,6 @@
+*
+!README.md
+!KVServer*.jar
+!lib739kv.so
+!kv739.h
+!.gitignore
