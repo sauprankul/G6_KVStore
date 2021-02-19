@@ -4,3 +4,4 @@
 !lib739kv.so
 !kv739.h
 !.gitignore
+!testBench.cc
