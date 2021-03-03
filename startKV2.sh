@@ -9,7 +9,7 @@ while [[ counter -lt $1 ]]
 do
     port=50000
     port=$(($port + $counter))
-    java -jar KVServer2_0.jar $port &
+    java -jar KVServer2_1.jar $port $counter $1 none &
     counter=$(($counter + 1))
 done
 
