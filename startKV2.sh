@@ -1,15 +1,15 @@
 if [[ $# -eq 0 ]]
     then
-        echo "Need argument n (int)"
+        echo "Need argument for filename"
         return
 fi
 
 counter=0
-while [[ counter -lt $1 ]]
+lines=$(wc -l < "$1")
+while [[ counter -le lines ]]
 do
-    port=50000
-    port=$(($port + $counter))
-    java -jar KVServer2_*.jar $port $counter $1 none &
+    echo $counter
+    java -jar KVServer2_*.jar $1 $counter &
     counter=$(($counter + 1))
 done
 

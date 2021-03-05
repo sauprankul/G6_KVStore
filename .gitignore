@@ -6,3 +6,4 @@
 !.gitignore
 !testBench.cc
 !startKV2.sh
+!default.config
