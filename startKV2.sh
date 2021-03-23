@@ -6,7 +6,8 @@ fi
 
 counter=0
 lines=$(wc -l < "$1")
-while [[ counter -le lines ]]
+echo "$lines" "lines detected. If this is not right, please check that there is a newline at the end of the config file."
+while [[ counter -lt lines ]]
 do
     echo $counter
     java -jar KVServer3_*.jar $1 $counter &
