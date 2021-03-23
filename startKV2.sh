@@ -9,7 +9,7 @@ lines=$(wc -l < "$1")
 while [[ counter -le lines ]]
 do
     echo $counter
-    java -jar KVServer2_*.jar $1 $counter &
+    java -jar KVServer3_*.jar $1 $counter &
     counter=$(($counter + 1))
 done
 
